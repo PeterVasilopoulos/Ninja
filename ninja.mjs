@@ -1,8 +1,8 @@
 // Ninja class
 class Ninja {
-    constructor(name, health) {
+    constructor(name) {
         this.name = name
-        this.health = health
+        this.health = 10
         this.speed = 3
         this.strength = 3
     }
@@ -23,9 +23,11 @@ class Ninja {
     }
 }
 
-const ninja1 = new Ninja('tom', 10);
+const ninja1 = new Ninja('tom');
 
 ninja1.sayName();
 ninja1.showStats();
 ninja1.drinkSake();
 ninja1.showStats();
+
+export default Ninja;
